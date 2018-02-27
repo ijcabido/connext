@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ConnextFinal</string>
+    <string name="Enter_Password">Enter Password</string>
+    <string name="Enter_Student_ID">Enter Student ID</string>
+    <string name="Login">LOG IN</string>
+    <string name="Enter_Student_id">Enter Student ID</string>
+    <string name="Enter_Email_Address">Enter email address</string>
+    <string name="Enter_First_Name">Enter first name</string>
+    <string name="Enter_Last_Name">Enter last name</string>
+    <string name="Enter_password">Enter password</string>
+    <string name="Log_in">LOG IN</string>
+    <string name="Register">Register</string>
+    <string name="Follow">FOLLOW</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.juco.connextfinal.HomepageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relLayout">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/rellayoutMidbar"
+            android:layout_below="@id/rellayoutTopbar">
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/container"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+
+            </android.support.v4.view.ViewPager>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/bottomBar"
+            android:layout_alignParentBottom="true">
+
+            <android.support.design.widget.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bottomNavView_Bar"
+                android:background="@drawable/whitegrey_bordertop"
+                app:menu="@menu/bot_nav_main">
+
+
+            </android.support.design.widget.BottomNavigationView>
+
+        </RelativeLayout>
+
+        <Button
+            android:background="@drawable/buttonstylewelcome"
+            android:text="SCAN ISBN BARCODE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_scan"
+            android:layout_above="@+id/bottomBar"
+            android:layout_toStartOf="@+id/btn_post"
+            android:layout_marginEnd="24dp"
+            />
+
+        <Button
+            android:background="@drawable/buttonstylewelcome"
+            android:text="POST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_post"
+            android:layout_marginEnd="46dp"
+            android:layout_above="@+id/bottomBar"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
